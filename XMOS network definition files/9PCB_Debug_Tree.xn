@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Network xmlns="http://www.xmos.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xmos.com http://www.xmos.com">
+  <Type>Board</Type>
+  <Name>PCB_Debug_Line</Name>
+  <Declarations>
+    <Declaration>tileref tile[18]</Declaration>
+    <Declaration>tileref usb_tile</Declaration>
+  </Declarations>
+  <Packages>
+    <Package id="PCB0" Type="XS2-UFnA-512-FB236">
+      <Nodes>
+        <Node Id="PCB0" InPackageId="0" Type="XS2-L16A-512" OscillatorSrc="1" SystemFrequency="500MHz">
+          <Boot>
+            <Source Location="bootFlash"/>
+          </Boot>
+          <Tile Number="0" Reference="tile[0]">
+            <Port Location="XS1_PORT_1B" Name="PORT_SQI_CS"/>
+            <Port Location="XS1_PORT_1C" Name="PORT_SQI_SCLK"/>
+            <Port Location="XS1_PORT_4B" Name="PORT_SQI_SIO"/>
+          </Tile>
+          <Tile Number="1" Reference="tile[1]"/>
+        </Node>
+        <Node Id="1" InPackageId="1" Type="periph:XS1-SU" Reference="usb_tile" Oscillator="24MHz">
+        </Node>
+      </Nodes>
+      <Links>
+        <Link Encoding="5wire">
+          <LinkEndpoint NodeId="PCB0" Link="8" Delays="52clk,52clk"/>
+          <LinkEndpoint NodeId="1" Link="XL0" Delays="1clk,1clk"/>
+        </Link>
+      </Links>
+    </Package>
+	
+	
+  <Package id="PCB1" Type="XS2-UEnA-512-FB236">
+	<Nodes>
+		<Node Id="PCB1" InPackageId="0" Type="XS2-L16A-512" SystemFrequency="500MHz">
+		  <Boot>
+            <Source Location="XMOSLINK"/>
+          </Boot>
+			<Tile Number="0" Reference="tile[2]" />
+			<Tile Number="1" Reference="tile[3]" />
+		</Node>
+	</Nodes>
+  </Package>
+  
+    <Package id="PCB2" Type="XS2-UFnA-512-FB236">
+	<Nodes>
+		<Node Id="PCB2" InPackageId="0" Type="XS2-L16A-512" SystemFrequency="500MHz">
+		  <Boot>
+            <Source Location="XMOSLINK"/>
+          </Boot>
+			<Tile Number="0" Reference="tile[4]" />
+			<Tile Number="1" Reference="tile[5]" />
+		</Node>
+	</Nodes>
+  </Package>
+  
+    <Package id="PCB3" Type="XS2-UEnA-512-FB236">
+	<Nodes>
+		<Node Id="PCB3" InPackageId="0" Type="XS2-L16A-512" SystemFrequency="500MHz">
+		  <Boot>
+            <Source Location="XMOSLINK"/>
+          </Boot>
+			<Tile Number="0" Reference="tile[6]" />
+			<Tile Number="1" Reference="tile[7]" />
+		</Node>
+	</Nodes>
+  </Package>
+  
+   <Package id="PCB4" Type="XS2-UEnA-512-FB236">
+	<Nodes>
+		<Node Id="PCB4" InPackageId="0" Type="XS2-L16A-512" SystemFrequency="500MHz">
+		  <Boot>
+            <Source Location="XMOSLINK"/>
+          </Boot>
+			<Tile Number="0" Reference="tile[8]" />
+			<Tile Number="1" Reference="tile[9]" />
+		</Node>
+	</Nodes>
+  </Package>
+  
+  
+
+    <Package id="PCB5" Type="XS2-UEnA-512-FB236">
+      <Nodes>
+        <Node Id="PCB5" InPackageId="0" Type="XS2-L16A-512" SystemFrequency="500MHz">
+          <Boot>
+            <Source Location="XMOSLINK"/>
+          </Boot>  
+          <Tile Number="0" Reference="tile[10]"/>
+          <Tile Number="1" Reference="tile[11]"/>
+        </Node>
+      </Nodes>
+    </Package>
+    
+    
+    <Package id="PCB6" Type="XS2-UEnA-512-FB236">
+         <Nodes>
+         <Node Id="PCB6" InPackageId="0" Type="XS2-L16A-512" SystemFrequency="500MHz">
+          <Boot>
+            <Source Location="XMOSLINK"/>
+          </Boot>
+          <Tile Number="0" Reference="tile[12]"/>
+          <Tile Number="1" Reference="tile[13]"/>
+        </Node>
+      </Nodes>
+    </Package>
+    
+        <Package id="PCB7" Type="XS2-UEnA-512-FB236">
+         <Nodes>
+         <Node Id="PCB7" InPackageId="0" Type="XS2-L16A-512" SystemFrequency="500MHz">
+          <Boot>
+            <Source Location="XMOSLINK"/>
+          </Boot>
+          <Tile Number="0" Reference="tile[14]"/>
+          <Tile Number="1" Reference="tile[15]"/>
+        </Node>
+      </Nodes>
+    </Package>
+    
+    
+        <Package id="PCB8" Type="XS2-UEnA-512-FB236">
+         <Nodes>
+         <Node Id="PCB8" InPackageId="0" Type="XS2-L16A-512" SystemFrequency="500MHz">
+          <Boot>
+            <Source Location="XMOSLINK"/>
+          </Boot>
+          <Tile Number="0" Reference="tile[16]"/>
+          <Tile Number="1" Reference="tile[17]"/>
+        </Node>
+      </Nodes>
+    </Package>
+     </Packages>
+
+
+   <Links>
+    <Link Encoding="2wire" Delays="2clk">
+      <LinkEndpoint NodeId="PCB0" Link="XL4"/>
+      <LinkEndpoint NodeId="PCB1" Link="XL0"/>      
+    </Link>
+    <Link Encoding="2wire" Delays="2clk">
+      <LinkEndpoint NodeId="PCB0" Link="XL5"/>
+      <LinkEndpoint NodeId="PCB1" Link="XL1"/>      
+    </Link>
+    
+    
+    <Link Encoding="2wire" Delays="2clk">
+      <LinkEndpoint NodeId="PCB0" Link="XL6"/>
+      <LinkEndpoint NodeId="PCB2" Link="XL0"/>      
+    </Link>
+    <Link Encoding="2wire" Delays="2clk">
+      <LinkEndpoint NodeId="PCB0" Link="XL7"/>
+      <LinkEndpoint NodeId="PCB2" Link="XL1"/>      
+    </Link>
+    
+    
+    <Link Encoding="2wire" Delays="2clk">
+      <LinkEndpoint NodeId="PCB1" Link="XL4"/>
+      <LinkEndpoint NodeId="PCB3" Link="XL0"/>      
+    </Link>
+    
+    
+    <Link Encoding="2wire" Delays="2clk">
+      <LinkEndpoint NodeId="PCB1" Link="XL5"/>
+      <LinkEndpoint NodeId="PCB4" Link="XL0"/>      
+    </Link>
+    
+    <Link Encoding="2wire" Delays="2clk">
+      <LinkEndpoint NodeId="PCB1" Link="XL6"/>
+      <LinkEndpoint NodeId="PCB5" Link="XL0"/>      
+    </Link>
+    
+    
+    <Link Encoding="2wire" Delays="2clk">
+      <LinkEndpoint NodeId="PCB2" Link="XL4"/>
+      <LinkEndpoint NodeId="PCB6" Link="XL0"/>      
+    </Link>
+    
+    
+    <Link Encoding="2wire" Delays="2clk">
+      <LinkEndpoint NodeId="PCB2" Link="XL5"/>
+      <LinkEndpoint NodeId="PCB7" Link="XL0"/>      
+    </Link>
+    
+    <Link Encoding="2wire" Delays="2clk">
+      <LinkEndpoint NodeId="PCB2" Link="XL6"/>
+      <LinkEndpoint NodeId="PCB8" Link="XL0"/>      
+    </Link>
+    
+    
+    
+</Links>
+
+  <ExternalDevices>
+    <Device NodeId="PCB0" Tile="0" Class="SQIFlash" Name="bootFlash">
+      <Attribute Name="PORT_SQI_CS" Value="PORT_SQI_CS"/>
+      <Attribute Name="PORT_SQI_SCLK"   Value="PORT_SQI_SCLK"/>
+      <Attribute Name="PORT_SQI_SIO"  Value="PORT_SQI_SIO"/>
+    </Device>
+  </ExternalDevices>
+  <JTAGChain>
+    <JTAGDevice NodeId="PCB0"/>
+    <JTAGDevice NodeId="PCB1"/>
+    <JTAGDevice NodeId="PCB2"/>
+    <JTAGDevice NodeId="PCB3"/>
+    <JTAGDevice NodeId="PCB4"/>
+    <JTAGDevice NodeId="PCB5"/>
+    <JTAGDevice NodeId="PCB6"/>
+    <JTAGDevice NodeId="PCB7"/> 
+    <JTAGDevice NodeId="PCB8"/>
+    
+    </JTAGChain>
+</Network>
