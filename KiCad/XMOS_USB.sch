@@ -3086,4 +3086,6 @@ F 3 "~" H 3925 6350 50  0001 C CNN
 	1    3925 6350
 	1    0    0    -1  
 $EndComp
+Text Notes 5950 1000 0    50   ~ 0
+USB: 90 ohm Zdiff impedance in coupled microstrip line.\nSpacing 3,5 mil. Width 9 mil. H=180um. Side clearance 20 mil\nPCB type: FR-4, KB-6160/6160A/6160C
 $EndSCHEMATC

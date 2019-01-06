@@ -4030,4 +4030,6 @@ Text Label 3500 3725 0    50   ~ 0
 L.in1+
 Text Label 3500 3825 0    50   ~ 0
 L.in1-
+Text Notes 2900 1675 0    50   ~ 0
+LWDS: 100 ohm Zdiff impedance in coupled microstrip line.\nSpacing 3,5 mil. Width 7 mil. H=180um. Side clearance 20mil.\nFR-4: KB-6160/6160A/6160C
 $EndSCHEMATC
