@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 16
 Title "Power"
-Date "2019-01-03"
+Date "2019-01-08"
 Rev "BETA"
 Comp "openPnP"
 Comment1 "Open Source"
