@@ -1532,4 +1532,10 @@ F 3 "" H 800 6850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 800  6300
+Text Label 8075 2100 0    50   ~ 0
+F
+Text Label 9725 2100 0    50   ~ 0
+FB5V
+Text Label 8500 2100 0    50   ~ 0
+Vin
 $EndSCHEMATC

@@ -337,9 +337,9 @@ Text Label 7000 4900 0    50   ~ 0
 X0_4C1
 Text Label 7000 5000 0    50   ~ 0
 X0_4C0
-Text Label 7000 5200 0    50   ~ 0
+Text Label 7000 5300 0    50   ~ 0
 X0_4D0
-Text Label 7000 5100 0    50   ~ 0
+Text Label 7000 5200 0    50   ~ 0
 X0_4D1
 $Comp
 L power:GND #PWR?
@@ -354,7 +354,7 @@ F 3 "" H 6950 4600 50  0001 C CNN
 	1    6950 4600
 	0    1    1    0   
 $EndComp
-Text Label 7000 5300 0    50   ~ 0
+Text Label 7000 5100 0    50   ~ 0
 X0_4D2
 Text Notes 8250 5450 2    50   ~ 0
 2 x 3 phase + watchdog =7 pins
@@ -622,15 +622,15 @@ X0_4D0
 $Comp
 L Switch:SW_DIP_x01 SW?
 U 1 1 5C9D2C86
-P 1250 3250
+P 1150 3250
 AR Path="/5C9D2C86" Ref="SW?"  Part="1" 
 AR Path="/5C982601/5C9D2C86" Ref="SW2"  Part="1" 
-F 0 "SW2" H 1250 3517 50  0000 C CNN
-F 1 "BOOT" H 1250 3426 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 1250 3250 50  0001 C CNN
-F 3 "" H 1250 3250 50  0001 C CNN
-F 4 "~" H 0   0   50  0001 C CNN "Part Number"
-	1    1250 3250
+F 0 "SW2" H 1150 3517 50  0000 C CNN
+F 1 "BOOT" H 1150 3426 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 1150 3250 50  0001 C CNN
+F 3 "" H 1150 3250 50  0001 C CNN
+F 4 "~" H -100 0   50  0001 C CNN "Part Number"
+	1    1150 3250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -650,14 +650,14 @@ $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5C9D2C94
-P 950 3250
+P 850 3250
 AR Path="/5C9D2C94" Ref="#PWR?"  Part="1" 
 AR Path="/5C982601/5C9D2C94" Ref="#PWR096"  Part="1" 
-F 0 "#PWR096" H 950 3100 50  0001 C CNN
-F 1 "+3V3" V 965 3378 50  0000 L CNN
-F 2 "" H 950 3250 50  0001 C CNN
-F 3 "" H 950 3250 50  0001 C CNN
-	1    950  3250
+F 0 "#PWR096" H 850 3100 50  0001 C CNN
+F 1 "+3V3" V 865 3378 50  0000 L CNN
+F 2 "" H 850 3250 50  0001 C CNN
+F 3 "" H 850 3250 50  0001 C CNN
+	1    850  3250
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -717,7 +717,7 @@ Wire Wire Line
 	7250 3250 7150 3250
 Wire Wire Line
 	7150 3600 7400 3600
-Text Notes 900  3450 0    50   ~ 0
+Text Notes 800  4175 0    50   ~ 0
 Boot from QSPI-FLASH or XLINK 0\n
 Wire Wire Line
 	2100 2500 2450 2500
@@ -919,4 +919,38 @@ Wire Wire Line
 	4800 3500 5500 3500
 Wire Wire Line
 	4800 3600 5500 3600
+$Comp
+L Jumper:Jumper_2_Open R?
+U 1 1 5C34448C
+P 1525 3550
+AR Path="/5C34448C" Ref="R?"  Part="1" 
+AR Path="/5C982601/5C34448C" Ref="JP20"  Part="1" 
+F 0 "JP20" V 1425 3675 50  0000 L CNN
+F 1 "BOOT" V 1525 3725 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1455 3550 50  0001 C CNN
+F 3 "~" H 1525 3550 50  0001 C CNN
+F 4 "~" H -175 300 50  0001 C CNN "Part Number"
+	1    1525 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1450 3250 1525 3250
+Connection ~ 1525 3250
+Wire Wire Line
+	1525 3250 1550 3250
+$Comp
+L power:GND #PWR?
+U 1 1 5C3504E2
+P 1525 3750
+AR Path="/5C3504E2" Ref="#PWR?"  Part="1" 
+AR Path="/5C982601/5C3504E2" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 1525 3500 50  0001 C CNN
+F 1 "GND" H 1530 3577 50  0000 C CNN
+F 2 "" H 1525 3750 50  0001 C CNN
+F 3 "" H 1525 3750 50  0001 C CNN
+	1    1525 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1525 3250 1525 3350
 $EndSCHEMATC

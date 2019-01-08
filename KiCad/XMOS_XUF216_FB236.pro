@@ -1,4 +1,4 @@
-update=2019-01-03 22:38:24
+update=2019-01-08 05:40:29
 version=1
 last_client=kicad
 [general]
@@ -34,10 +34,10 @@ ModuleOutlineThickness=0.15
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=../../../KiCad xu216_fb236/XMOS-XU216_FB236-BOARD/
+PlotDirectoryName=../
 SubpartIdSeparator=0
 SubpartFirstId=65
-NetFmtName=
+NetFmtName=Pcbnew
 SpiceAjustPassiveValues=0
 LabSize=50
 ERC_TestSimilarLabels=1

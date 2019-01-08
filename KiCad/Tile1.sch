@@ -232,22 +232,6 @@ Text Label 1900 1450 0    50   ~ 0
 X1_1A
 Wire Wire Line
 	1650 3850 2350 3850
-Wire Wire Line
-	4150 4250 4600 4250
-Wire Wire Line
-	4150 4150 4600 4150
-Wire Wire Line
-	4150 4050 4600 4050
-Wire Wire Line
-	4150 3950 4600 3950
-Wire Wire Line
-	4150 3850 4600 3850
-Wire Wire Line
-	4150 3750 4600 3750
-Wire Wire Line
-	4150 3650 4600 3650
-Wire Wire Line
-	4150 3550 4600 3550
 Text Label 4250 4250 0    50   ~ 0
 X1_8C0
 $Comp
@@ -273,14 +257,6 @@ Wire Wire Line
 	2350 3600 1850 3600
 Wire Wire Line
 	2350 3700 1850 3700
-Wire Wire Line
-	4150 2500 4600 2500
-Wire Wire Line
-	4150 2600 4600 2600
-Wire Wire Line
-	4150 2700 4600 2700
-Wire Wire Line
-	4150 2800 4600 2800
 Wire Wire Line
 	2350 2400 1800 2400
 Wire Wire Line
@@ -309,8 +285,6 @@ Text Label 1950 3600 0    50   ~ 0
 X1D20
 Text Label 1950 3700 0    50   ~ 0
 X1D21
-Text Label 4250 2500 0    50   ~ 0
-ETH.TX0
 Text Label 4250 4150 0    50   ~ 0
 X1_8C1
 Text Label 4250 4050 0    50   ~ 0
@@ -327,20 +301,6 @@ Text Label 4250 3550 0    50   ~ 0
 X1_8C7
 NoConn ~ 1700 4050
 NoConn ~ 1800 2750
-$Comp
-L Connector_Generic:Conn_01x08 J?
-U 1 1 5CA7F8C7
-P 4800 3950
-AR Path="/5CA7F8C7" Ref="J?"  Part="1" 
-AR Path="/5CA35A27/5CA7F8C7" Ref="J12"  Part="1" 
-F 0 "J12" H 4975 4300 50  0000 C CNN
-F 1 "Conn_01x08" H 4800 4400 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 4800 3950 50  0001 C CNN
-F 3 "~" H 4800 3950 50  0001 C CNN
-F 4 "~" H 0   0   50  0001 C CNN "Part Number"
-	1    4800 3950
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	4900 2050 4150 2050
 Wire Wire Line
@@ -437,13 +397,11 @@ NoConn ~ 1850 3000
 NoConn ~ 1850 3100
 NoConn ~ 1850 3600
 NoConn ~ 1850 3700
-Text Label 4250 2600 0    50   ~ 0
+Text Label 5325 2600 0    50   ~ 0
 ETH.TX1
-Text Label 4250 2700 0    50   ~ 0
+Text Label 5325 2700 0    50   ~ 0
 ETH.TX2
-Text Label 4250 2800 0    50   ~ 0
-ETH.TX3
-Text Notes 4875 3550 0    59   Italic 0
+Text Notes 4625 3550 0    59   Italic 0
 ETH.rx3
 Text Label 4550 1850 0    50   ~ 10
 L1.out0
@@ -451,20 +409,6 @@ Text Label 4550 1950 0    50   ~ 10
 L1.in0
 Text Label 4575 2050 0    50   ~ 10
 L1.in1
-$Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 5CA7F92E
-P 4800 2600
-AR Path="/5CA7F92E" Ref="J?"  Part="1" 
-AR Path="/5CA35A27/5CA7F92E" Ref="J11"  Part="1" 
-F 0 "J11" H 4750 2300 50  0000 L CNN
-F 1 "Conn_01x04" H 4675 2800 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4800 2600 50  0001 C CNN
-F 3 "~" H 4800 2600 50  0001 C CNN
-F 4 "~" H 0   0   50  0001 C CNN "Part Number"
-	1    4800 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1700 3200 2350 3200
 Text HLabel 1700 3200 0    50   Input ~ 10
@@ -515,20 +459,18 @@ Wire Wire Line
 	1750 1800 2350 1800
 Wire Wire Line
 	2350 1900 1750 1900
-Text Notes 4875 3650 0    59   Italic 0
+Text Notes 4625 3650 0    59   Italic 0
 ETH.rx2
-Text Notes 4875 3750 0    59   Italic 0
+Text Notes 4625 3750 0    59   Italic 0
 ETH.rx1
-Text Notes 4875 3850 0    59   Italic 0
+Text Notes 4625 3850 0    59   Italic 0
 ETH.rx0\n
-Text Notes 4875 3950 0    59   Italic 0
+Text Notes 4625 3950 0    59   Italic 0
 ETH.rx_ctl\n
-Text Notes 4875 4050 0    59   Italic 0
+Text Notes 4625 4050 0    59   Italic 0
 ETH.rx_clk\n
-Text Notes 4875 4150 0    59   Italic 0
+Text Notes 4625 4150 0    59   Italic 0
 ETH.tx_ctl\n
-Text Notes 4875 4250 0    59   Italic 0
-ETH.tx_clk\n
 $Comp
 L Device:R_Pack02 RN?
 U 1 1 5C320996
@@ -547,4 +489,184 @@ Wire Wire Line
 	4450 1750 4900 1750
 Wire Wire Line
 	4450 1850 4900 1850
+$Comp
+L Connector_Generic:Conn_02x12_Odd_Even J11
+U 1 1 5C357C1E
+P 5450 4050
+F 0 "J11" H 5500 4770 50  0000 C CNN
+F 1 "Conn_02x12_Odd_Even" H 5500 4677 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x12_P2.54mm_Vertical" H 5450 4050 50  0001 C CNN
+F 3 "~" H 5450 4050 50  0001 C CNN
+	1    5450 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4250 4550 4250
+Wire Wire Line
+	4150 4150 5250 4150
+Wire Wire Line
+	4150 4050 5250 4050
+Wire Wire Line
+	4150 3950 5250 3950
+Wire Wire Line
+	4150 3850 5250 3850
+Wire Wire Line
+	4150 3750 5250 3750
+Wire Wire Line
+	4150 3650 5250 3650
+Wire Wire Line
+	4150 3550 5250 3550
+Wire Wire Line
+	4150 2500 4750 2500
+Wire Wire Line
+	4150 2600 4750 2600
+Wire Wire Line
+	4150 2700 4750 2700
+Wire Wire Line
+	4150 2800 4750 2800
+$Comp
+L power:GND #PWR?
+U 1 1 5C382B2B
+P 5750 4650
+AR Path="/5C382B2B" Ref="#PWR?"  Part="1" 
+AR Path="/5CA35A27/5C382B2B" Ref="#PWR0117"  Part="1" 
+F 0 "#PWR0117" H 5750 4400 50  0001 C CNN
+F 1 "GND" H 5755 4477 50  0000 C CNN
+F 2 "" H 5750 4650 50  0001 C CNN
+F 3 "" H 5750 4650 50  0001 C CNN
+	1    5750 4650
+	1    0    0    -1  
+$EndComp
+Connection ~ 5750 3650
+Wire Wire Line
+	5750 3650 5750 3550
+Connection ~ 5750 3750
+Wire Wire Line
+	5750 3750 5750 3650
+Connection ~ 5750 3850
+Wire Wire Line
+	5750 3850 5750 3750
+Connection ~ 5750 3950
+Wire Wire Line
+	5750 3950 5750 3850
+Connection ~ 5750 4050
+Wire Wire Line
+	5750 4050 5750 3950
+Connection ~ 5750 4150
+Wire Wire Line
+	5750 4150 5750 4050
+Connection ~ 5750 4250
+Wire Wire Line
+	5750 4250 5750 4150
+Text Notes 4425 5050 0    50   ~ 0
+4 1-bit low speed ports needed for a RGMII card.
+Text Notes 5875 3725 0    50   ~ 0
+High speed RGMII pins.\n125MHz
+Wire Wire Line
+	5750 4250 5750 4350
+Connection ~ 5750 4350
+Wire Wire Line
+	5750 4350 5750 4450
+Connection ~ 5750 4450
+Wire Wire Line
+	5750 4450 5750 4550
+Connection ~ 5750 4550
+Wire Wire Line
+	5750 4550 5750 4650
+Wire Wire Line
+	5250 4450 4700 4450
+Wire Wire Line
+	5250 4550 4700 4550
+Text Label 4850 4350 0    50   ~ 0
+ETH.TX0
+Text Label 4850 4450 0    50   ~ 0
+ETH.TX1
+Text Label 4850 4550 0    50   ~ 0
+ETH.TX2
+Text Label 4850 4650 0    50   ~ 0
+ETH.TX3
+Connection ~ 5750 4650
+Text Notes 4750 2525 2    118  ~ 0
+→\n
+Text Notes 4750 2625 2    118  ~ 0
+→\n
+Text Notes 4750 2725 2    118  ~ 0
+→\n
+Text Notes 4750 2825 2    118  ~ 0
+→\n
+Text Notes 5225 4175 2    118  ~ 0
+→\n
+Text Notes 4250 4275 2    118  ~ 0
+→\n
+$Comp
+L Device:R_Pack02 RN?
+U 1 1 5C3CB19F
+P 4325 4550
+AR Path="/5C3CB19F" Ref="RN?"  Part="1" 
+AR Path="/5CA35A27/5C3CB19F" Ref="RN20"  Part="1" 
+F 0 "RN20" V 4125 4550 50  0000 C CNN
+F 1 "22-33R" V 4459 4550 50  0001 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_2x0402" V 4500 4550 50  0001 C CNN
+F 3 "~" H 4325 4550 50  0001 C CNN
+F 4 "~" H -2900 1225 50  0001 C CNN "Part Number"
+	1    4325 4550
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5150 2600 5675 2600
+$Comp
+L Device:R_Pack02 RN?
+U 1 1 5C3CB213
+P 4950 2700
+AR Path="/5C3CB213" Ref="RN?"  Part="1" 
+AR Path="/5CA35A27/5C3CB213" Ref="RN21"  Part="1" 
+F 0 "RN21" V 5050 2700 50  0000 C CNN
+F 1 "22-33R" V 5084 2700 50  0001 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_2x0402" V 5125 2700 50  0001 C CNN
+F 3 "~" H 4950 2700 50  0001 C CNN
+F 4 "~" H -2275 -625 50  0001 C CNN "Part Number"
+	1    4950 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5150 2700 5675 2700
+Wire Wire Line
+	4525 4450 4525 4350
+Wire Wire Line
+	4525 4350 5250 4350
+Wire Wire Line
+	4525 4650 4525 4550
+Wire Wire Line
+	4525 4650 5250 4650
+Wire Wire Line
+	3625 4550 4125 4550
+Wire Wire Line
+	4125 4450 3625 4450
+Text Label 4250 2800 0    50   ~ 0
+X1_8D4
+Text Label 4250 2700 0    50   ~ 0
+X1_8D5
+Text Label 4275 2600 0    50   ~ 0
+X1_8D6
+Text Label 4275 2500 0    50   ~ 0
+X1_8D7
+Text Label 3750 4450 0    50   ~ 0
+X1_8D7
+Text Label 3725 4550 0    50   ~ 0
+X1_8D4
+$Comp
+L Device:R R58
+U 1 1 5C3E9BF7
+P 4700 4250
+F 0 "R58" V 4700 4225 50  0000 C CNN
+F 1 "22-33" V 4725 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4630 4250 50  0001 C CNN
+F 3 "~" H 4700 4250 50  0001 C CNN
+	1    4700 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 4250 5250 4250
+Text Label 4850 4250 0    50   ~ 0
+ETH.TX_CLK
 $EndSCHEMATC
