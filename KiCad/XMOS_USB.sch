@@ -1,12 +1,11 @@
 EESchema Schematic File Version 4
-LIBS:XMOS_XUF216_FB236-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 16
 Title "XTAG & XMOS USB"
-Date "2019-01-08"
+Date "2020-06-05"
 Rev "BETA"
 Comp "openPnP"
 Comment1 "Open Source"
@@ -130,7 +129,7 @@ F 3 "~" H 1800 7200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xmos:XUF216-512-FB236 U?
+L XMOS_XUF216_FB236-rescue:XUF216-512-FB236-xmos-XMOS_XUF216_FB236-rescue U?
 U 1 1 5C4CC3CE
 P 6250 4700
 AR Path="/5C4CC3CE" Ref="U?"  Part="1" 

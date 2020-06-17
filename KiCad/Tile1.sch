@@ -1,12 +1,11 @@
 EESchema Schematic File Version 4
-LIBS:XMOS_XUF216_FB236-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 16
 Title "XMOS Tile1"
-Date "2019-01-08"
+Date "2020-06-05"
 Rev "BETA"
 Comp "openPnP"
 Comment1 "Open Source"
@@ -118,7 +117,7 @@ ETH.INT
 Text Notes 3750 5650 0    59   Italic 0
 ETH.PHY_RSTn
 $Comp
-L xmos:XUF216-512-FB236 U?
+L XMOS_XUF216_FB236-rescue:XUF216-512-FB236-xmos-XMOS_XUF216_FB236-rescue U?
 U 5 1 5CA63C77
 P 9850 4300
 AR Path="/5CA63C77" Ref="U?"  Part="5" 
@@ -151,7 +150,7 @@ F 3 "" H 8950 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L xmos:XUF216-512-FB236 U?
+L XMOS_XUF216_FB236-rescue:XUF216-512-FB236-xmos-XMOS_XUF216_FB236-rescue U?
 U 4 1 5CA7F845
 P 3250 4350
 AR Path="/5CA7F845" Ref="U?"  Part="4" 

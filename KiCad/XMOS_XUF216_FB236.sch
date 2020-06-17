@@ -1,13 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:XMOS_XUF216_FB236-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 16
 Title "XMOS top level"
-Date "2019-01-08"
-Rev "BETA"
+Date "2020-06-05"
+Rev "BETA 1.1"
 Comp "openPnP"
 Comment1 "Open Source"
 Comment2 ""
@@ -60,9 +59,8 @@ S 3400 2025 850  550
 U 5C95FA9E
 F0 "POWER" 79
 F1 "power.sch" 47
-F2 "LVDS_EN" O R 4250 2175 50 
-F3 "~RST" O R 4250 2425 50 
-F4 "~MR" I L 3400 2475 50 
+F2 "~RST" O R 4250 2425 50 
+F3 "~MR" I L 3400 2475 50 
 $EndSheet
 $Comp
 L power:GND #PWR04
@@ -286,12 +284,6 @@ $EndComp
 Wire Wire Line
 	2650 3175 3400 3175
 Wire Wire Line
-	4250 2425 4825 2425
-Wire Wire Line
-	4825 2425 4825 3225
-Wire Wire Line
-	4825 3225 4400 3225
-Wire Wire Line
 	2650 3375 3400 3375
 Wire Wire Line
 	2650 3475 3400 3475
@@ -313,12 +305,8 @@ Wire Wire Line
 	2650 2475 3400 2475
 Text Label 2900 2475 0    50   ~ 0
 ~TRST
-Text Label 4750 2175 2    59   ~ 0
-LVDS_EN
 Text Label 4550 2425 2    59   ~ 0
 ~RST
-Wire Wire Line
-	4250 2175 4900 2175
 Wire Wire Line
 	2650 2175 2900 2175
 Wire Wire Line
@@ -354,7 +342,6 @@ F12 "L4.in0" I R 6650 3225 50
 F13 "L4.out0" O R 6650 3325 50 
 F14 "L4.out1" O R 6650 3425 50 
 $EndSheet
-Connection ~ 4900 2175
 Wire Wire Line
 	4900 2175 5100 2175
 $Sheet
@@ -641,7 +628,7 @@ Wire Wire Line
 	4900 2625 10725 2625
 Connection ~ 4900 2625
 Wire Wire Line
-	4900 2625 4900 2175
+	4900 2625 4900 2425
 Wire Wire Line
 	11000 4875 11000 3275
 Wire Wire Line
@@ -763,7 +750,7 @@ Wire Notes Line
 Wire Notes Line
 	8400 4000 8400 4125
 Wire Wire Line
-	4900 2625 4900 4000
+	4900 2625 4900 3225
 Wire Wire Line
 	5100 4000 4900 4000
 Connection ~ 4900 4000
@@ -830,4 +817,14 @@ F 4 "~" H 0   0   50  0001 C CNN "Part Number"
 	1    2000 7300
 	1    0    0    -1  
 $EndComp
+Connection ~ 4900 2425
+Wire Wire Line
+	4900 2425 4900 2175
+Connection ~ 4900 3225
+Wire Wire Line
+	4900 3225 4900 4000
+Wire Wire Line
+	4250 2425 4900 2425
+Wire Wire Line
+	4400 3225 4900 3225
 $EndSCHEMATC

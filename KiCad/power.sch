@@ -1,12 +1,11 @@
 EESchema Schematic File Version 4
-LIBS:XMOS_XUF216_FB236-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 16
 Title "Power"
-Date "2019-01-08"
+Date "2020-06-05"
 Rev "BETA"
 Comp "openPnP"
 Comment1 "Open Source"
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MyKiCadLibs-Lib:IC-REG-ST1S06 U3
+L XMOS_XUF216_FB236-rescue:IC-REG-ST1S06-MyKiCadLibs-Lib-XMOS_XUF216_FB236-rescue U3
 U 1 1 5C318FCB
 P 3550 2850
 F 0 "U3" H 4050 3137 60  0000 C CNN
@@ -204,7 +203,7 @@ F 3 "" H 3050 2850 50  0001 C CNN
 $EndComp
 Connection ~ 3050 2850
 $Comp
-L MyKiCadLibs-Lib:IC-REG-ST1S06 U4
+L XMOS_XUF216_FB236-rescue:IC-REG-ST1S06-MyKiCadLibs-Lib-XMOS_XUF216_FB236-rescue U4
 U 1 1 5C9696F7
 P 3550 4050
 F 0 "U4" H 4050 4337 60  0000 C CNN
@@ -366,7 +365,7 @@ FB1V0
 Text Label 4550 2950 0    50   ~ 0
 FB3V3
 $Comp
-L xmos_project:RFM-0505S M1
+L XMOS_XUF216_FB236-rescue:RFM-0505S-xmos_project-XMOS_XUF216_FB236-rescue M1
 U 1 1 5C523D64
 P 7850 4100
 F 0 "M1" V 8115 3822 50  0000 R CNN
@@ -833,17 +832,6 @@ Wire Notes Line
 Wire Notes Line
 	10950 4700 6450 4700
 $Comp
-L power:+3.3V #PWR020
-U 1 1 5C319044
-P 3550 4450
-F 0 "#PWR020" H 3550 4300 50  0001 C CNN
-F 1 "+3.3V" H 3565 4623 50  0000 C CNN
-F 2 "" H 3550 4450 50  0001 C CNN
-F 3 "" H 3550 4450 50  0001 C CNN
-	1    3550 4450
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:D_Schottky D3
 U 1 1 5C319050
 P 7900 2100
@@ -990,13 +978,13 @@ F 4 "~" H 0   0   50  0001 C CNN "Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L MyKiCadLibs-Lib:IC-RES-TPS3808 U?
+L XMOS_XUF216_FB236-rescue:IC-RES-TPS3808-MyKiCadLibs-Lib-XMOS_XUF216_FB236-rescue U?
 U 1 1 5C5D53A3
 P 3500 6650
 AR Path="/5C5D53A3" Ref="U?"  Part="1" 
 AR Path="/5C95FA9E/5C5D53A3" Ref="U2"  Part="1" 
 F 0 "U2" H 4000 6937 60  0000 C CNN
-F 1 "IC-RES-TPS3808" H 4000 6831 60  0000 C CNN
+F 1 "TPS3808G01" H 4016 6831 60  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6_Handsoldering" H 4050 6250 60  0001 C CNN
 F 3 "" H 3500 6650 60  0001 C CNN
 F 4 "TI TPS3808 SOT-23 Reset Supervisor" H 4050 6150 60  0001 C CNN "Description"
@@ -1024,7 +1012,7 @@ P 2450 6750
 AR Path="/5C5D53B0" Ref="R?"  Part="1" 
 AR Path="/5C95FA9E/5C5D53B0" Ref="R5"  Part="1" 
 F 0 "R5" V 2350 6700 50  0000 L CNN
-F 1 "10k" V 2250 6700 50  0000 L CNN
+F 1 "27k" V 2250 6700 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2380 6750 50  0001 C CNN
 F 3 "~" H 2450 6750 50  0001 C CNN
 F 4 "~" H 0   0   50  0001 C CNN "Part Number"
@@ -1051,7 +1039,7 @@ P 2750 6900
 AR Path="/5C5D53BD" Ref="R?"  Part="1" 
 AR Path="/5C95FA9E/5C5D53BD" Ref="R6"  Part="1" 
 F 0 "R6" H 2820 6946 50  0000 L CNN
-F 1 "7k5" H 2820 6855 50  0000 L CNN
+F 1 "10k" H 2820 6855 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2680 6900 50  0001 C CNN
 F 3 "~" H 2750 6900 50  0001 C CNN
 F 4 "~" H 0   0   50  0001 C CNN "Part Number"
@@ -1094,7 +1082,7 @@ P 3100 6900
 AR Path="/5C5D53D2" Ref="C?"  Part="1" 
 AR Path="/5C95FA9E/5C5D53D2" Ref="C5"  Part="1" 
 F 0 "C5" H 3150 6800 50  0000 L CNN
-F 1 "10nF" H 2850 6800 50  0000 L CNN
+F 1 "1nF" H 2850 6800 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3138 6750 50  0001 C CNN
 F 3 "~" H 3100 6900 50  0001 C CNN
 F 4 "~" H 0   0   50  0001 C CNN "Part Number"
@@ -1147,78 +1135,26 @@ F 3 "" H 3500 7150 50  0001 C CNN
 	1    3500 7150
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	5700 7750 5700 5900
-Wire Notes Line
-	5700 5900 1700 5900
-Wire Notes Line
-	1700 5900 1700 7750
-Wire Notes Line
-	1700 7750 5700 7750
 Text Notes 1750 6050 0    79   ~ 16
 Power on reset
 Text Notes 3375 7700 0    59   ~ 0
 CT(nF) =  [tD(s) -  0.5E-3 ] * 175 = 0.78nF\n\nvalid for CT>100pF
-$Comp
-L MyKiCadLibs-Lib:IC-LOGIC-BUF-NC7WZ04P6X U?
-U 2 1 5C5D53F9
-P 4650 6250
-AR Path="/5C5D53F9" Ref="U?"  Part="2" 
-AR Path="/5C95FA9E/5C5D53F9" Ref="U5"  Part="2" 
-F 0 "U5" H 4675 6537 60  0000 C CNN
-F 1 "IC-LOGIC-BUF-NC7WZ04P6X" H 4675 6431 60  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 5650 6150 60  0001 C CNN
-F 3 "" H 4750 6250 60  0000 C CNN
-F 4 "NC7WZ04 TinyLogic UHS Dual Inverter" H 5700 6250 60  0001 C CNN "Decription"
-F 5 "~" H 0   0   50  0001 C CNN "Part Number"
-	2    4650 6250
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	4500 6650 4900 6650
 $Comp
-L Device:LED D1
-U 1 1 5C5D5401
-P 3100 6250
-AR Path="/5C95FA9E/5C5D5401" Ref="D1"  Part="1" 
-AR Path="/5C5D5401" Ref="D?"  Part="1" 
-F 0 "D1" V 3138 6133 50  0000 R CNN
-F 1 "GREEN" V 3047 6133 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3100 6250 50  0001 C CNN
-F 3 "~" H 3100 6250 50  0001 C CNN
-F 4 "~" H 0   0   50  0001 C CNN "Part Number"
-	1    3100 6250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R7
 U 1 1 5C5D5408
-P 2800 6250
+P 4000 6100
 AR Path="/5C95FA9E/5C5D5408" Ref="R7"  Part="1" 
 AR Path="/5C5D5408" Ref="R?"  Part="1" 
-F 0 "R7" V 2900 6300 50  0000 R CNN
-F 1 "1k" H 2730 6295 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2730 6250 50  0001 C CNN
-F 3 "~" H 2800 6250 50  0001 C CNN
-F 4 "~" H 0   0   50  0001 C CNN "Part Number"
-	1    2800 6250
+F 0 "R7" V 4100 6150 50  0000 R CNN
+F 1 "1k" H 3930 6145 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3930 6100 50  0001 C CNN
+F 3 "~" H 4000 6100 50  0001 C CNN
+F 4 "~" H 1200 -150 50  0001 C CNN "Part Number"
+	1    4000 6100
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C5D540F
-P 2650 6250
-AR Path="/5C5D540F" Ref="#PWR?"  Part="1" 
-AR Path="/5C95FA9E/5C5D540F" Ref="#PWR012"  Part="1" 
-F 0 "#PWR012" H 2650 6000 50  0001 C CNN
-F 1 "GND" H 2655 6077 50  0000 C CNN
-F 2 "" H 2650 6250 50  0001 C CNN
-F 3 "" H 2650 6250 50  0001 C CNN
-	1    2650 6250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3250 6250 3650 6250
 $Comp
 L Connector:TestPoint_Probe TP?
 U 1 1 5C5D541A
@@ -1237,15 +1173,6 @@ Wire Wire Line
 Wire Wire Line
 	4900 6250 4900 6350
 Connection ~ 4900 6475
-Text HLabel 3450 6050 0    50   Output ~ 0
-LVDS_EN
-Wire Wire Line
-	3450 6050 3650 6050
-Wire Wire Line
-	3650 6050 3650 6250
-Connection ~ 3650 6250
-Wire Wire Line
-	3650 6250 4350 6250
 Text HLabel 5300 6350 2    50   Output ~ 0
 ~RST
 Wire Wire Line
@@ -1263,47 +1190,6 @@ Connection ~ 4850 6750
 Wire Wire Line
 	4850 6750 4500 6750
 $Comp
-L MyKiCadLibs-Lib:IC-LOGIC-BUF-NC7WZ04P6X U?
-U 1 1 5C961015
-P 6100 6700
-AR Path="/5C961015" Ref="U?"  Part="1" 
-AR Path="/5C95FA9E/5C961015" Ref="U5"  Part="1" 
-F 0 "U5" H 6278 6753 60  0000 L CNN
-F 1 "IC-LOGIC-BUF-NC7WZ04P6X" H 6200 7200 60  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 7100 6600 60  0001 C CNN
-F 3 "" H 6200 6700 60  0000 C CNN
-F 4 "NC7WZ04 TinyLogic UHS Dual Inverter" H 7150 6700 60  0001 C CNN "Decription"
-F 5 "~" H 0   0   50  0001 C CNN "Part Number"
-	1    6100 6700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5C96101C
-P 6100 6150
-AR Path="/5C96101C" Ref="#PWR?"  Part="1" 
-AR Path="/5C95FA9E/5C96101C" Ref="#PWR028"  Part="1" 
-F 0 "#PWR028" H 6100 6000 50  0001 C CNN
-F 1 "+3V3" V 6115 6278 50  0000 L CNN
-F 2 "" H 6100 6150 50  0001 C CNN
-F 3 "" H 6100 6150 50  0001 C CNN
-	1    6100 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C961022
-P 6100 7300
-AR Path="/5C961022" Ref="#PWR?"  Part="1" 
-AR Path="/5C95FA9E/5C961022" Ref="#PWR029"  Part="1" 
-F 0 "#PWR029" H 6100 7050 50  0001 C CNN
-F 1 "GND" H 6105 7127 50  0000 C CNN
-F 2 "" H 6100 7300 50  0001 C CNN
-F 3 "" H 6100 7300 50  0001 C CNN
-	1    6100 7300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C?
 U 1 1 5CC69C62
 P 1900 7250
@@ -1319,24 +1205,6 @@ F 5 "~" H 0   0   50  0001 C CNN "Part Number"
 	1    1900 7250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C?
-U 1 1 5CC6C100
-P 6650 6700
-AR Path="/5CC6C100" Ref="C?"  Part="1" 
-AR Path="/5C3D1E73/5CC6C100" Ref="C?"  Part="1" 
-AR Path="/5C95FA9E/5CC6C100" Ref="C9"  Part="1" 
-F 0 "C9" H 6765 6746 50  0000 L CNN
-F 1 "C" H 6765 6655 50  0001 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6688 6550 50  0001 C CNN
-F 3 "~" H 6650 6700 50  0001 C CNN
-F 4 "100nF" H 2450 1350 50  0001 C CNN "Value"
-F 5 "~" H 0   0   50  0001 C CNN "Part Number"
-	1    6650 6700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 6150 6100 6250
 $Comp
 L power:GND #PWR?
 U 1 1 5CC79460
@@ -1384,20 +1252,6 @@ F 3 "" H 6650 3950 50  0001 C CNN
 	1    6650 3950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6650 6550 6650 6250
-Wire Wire Line
-	6650 6250 6100 6250
-Connection ~ 6100 6250
-Wire Wire Line
-	6650 6850 6650 7200
-Wire Wire Line
-	6650 7200 6100 7200
-Wire Wire Line
-	6100 7200 6100 7150
-Connection ~ 6100 7200
-Wire Wire Line
-	6100 7200 6100 7300
 Connection ~ 7650 2100
 NoConn ~ 7300 2500
 Wire Wire Line
@@ -1429,6 +1283,7 @@ F 2 "Capacitor_THT:C_Radial_D6.3mm_H11.0mm_P2.50mm" H 8538 2150 50  0001 C CNN
 F 3 "~" H 8500 2300 50  0001 C CNN
 F 4 "" H 8500 2300 50  0001 C CNN "Part number"
 F 5 "ESK226M100AE3AA" H 0   0   50  0001 C CNN "Part Number"
+F 6 "100V" H 8400 2200 50  0000 R CNN "Voltage"
 	1    8500 2300
 	1    0    0    -1  
 $EndComp
@@ -1505,37 +1360,85 @@ Wire Wire Line
 	10700 1650 10700 1750
 Wire Wire Line
 	10700 2100 10700 2050
-$Comp
-L MyKiCadLibs-Lib:IC-LOGIC-BUF-NC7WZ04P6X U5
-U 3 1 5C33CD5B
-P 800 6600
-F 0 "U5" V 825 6471 60  0000 R CNN
-F 1 "IC-LOGIC-BUF-NC7WZ04P6X" V 771 6471 60  0001 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 1800 6500 60  0001 C CNN
-F 3 "" H 900 6600 60  0000 C CNN
-F 4 "NC7WZ04 TinyLogic UHS Dual Inverter" H 1850 6600 60  0001 C CNN "Decription"
-F 5 "~" H 0   0   50  0001 C CNN "Part Number"
-	3    800  6600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C33D2C7
-P 800 6850
-AR Path="/5C33D2C7" Ref="#PWR?"  Part="1" 
-AR Path="/5C95FA9E/5C33D2C7" Ref="#PWR0114"  Part="1" 
-F 0 "#PWR0114" H 800 6600 50  0001 C CNN
-F 1 "GND" H 805 6677 50  0000 C CNN
-F 2 "" H 800 6850 50  0001 C CNN
-F 3 "" H 800 6850 50  0001 C CNN
-	1    800  6850
-	1    0    0    -1  
-$EndComp
-NoConn ~ 800  6300
 Text Label 8075 2100 0    50   ~ 0
 F
 Text Label 9725 2100 0    50   ~ 0
 FB5V
 Text Label 8500 2100 0    50   ~ 0
 Vin
+$Comp
+L Device:LED D1
+U 1 1 5C5D5401
+P 4300 6100
+AR Path="/5C95FA9E/5C5D5401" Ref="D1"  Part="1" 
+AR Path="/5C5D5401" Ref="D?"  Part="1" 
+F 0 "D1" V 4338 5983 50  0000 R CNN
+F 1 "RED" V 4247 5983 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4300 6100 50  0001 C CNN
+F 3 "~" H 4300 6100 50  0001 C CNN
+F 4 "~" H 1200 -150 50  0001 C CNN "Part Number"
+	1    4300 6100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3550 4450 3550 4150
+Connection ~ 3550 4150
+$Comp
+L Device:R R?
+U 1 1 5EDE5DD8
+P 2400 6400
+AR Path="/5EDE5DD8" Ref="R?"  Part="1" 
+AR Path="/5C95FA9E/5EDE5DD8" Ref="R59"  Part="1" 
+F 0 "R59" V 2300 6350 50  0000 L CNN
+F 1 "130k" V 2200 6350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2330 6400 50  0001 C CNN
+F 3 "~" H 2400 6400 50  0001 C CNN
+F 4 "~" H -50 -350 50  0001 C CNN "Part Number"
+	1    2400 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR012
+U 1 1 5EDE7CB5
+P 2250 6400
+F 0 "#PWR012" H 2250 6250 50  0001 C CNN
+F 1 "+3.3V" H 2265 6573 50  0000 C CNN
+F 2 "" H 2250 6400 50  0001 C CNN
+F 3 "" H 2250 6400 50  0001 C CNN
+	1    2250 6400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2750 6750 2750 6400
+Wire Wire Line
+	2750 6400 2550 6400
+Text Notes 2250 6900 0    50   ~ 0
+200nA\n
+Text Notes 2150 6550 0    50   ~ 0
+200nA\n
+Wire Wire Line
+	4450 6100 4700 6100
+Wire Wire Line
+	4700 6350 4900 6350
+Wire Wire Line
+	4700 6100 4700 6350
+Wire Notes Line
+	5700 5800 1700 5800
+Wire Notes Line
+	5700 5800 5700 7750
+Wire Notes Line
+	1700 7750 5700 7750
+Wire Notes Line
+	1700 5800 1700 7750
+$Comp
+L power:+3.3V #PWR020
+U 1 1 5EE20C5F
+P 3850 6100
+F 0 "#PWR020" H 3850 5950 50  0001 C CNN
+F 1 "+3.3V" H 3865 6273 50  0000 C CNN
+F 2 "" H 3850 6100 50  0001 C CNN
+F 3 "" H 3850 6100 50  0001 C CNN
+	1    3850 6100
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

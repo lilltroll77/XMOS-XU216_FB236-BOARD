@@ -1,12 +1,11 @@
 EESchema Schematic File Version 4
-LIBS:XMOS_XUF216_FB236-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 15 16
 Title "Isolation"
-Date "2019-01-08"
+Date "2020-06-05"
 Rev "BETA"
 Comp "openPnP"
 Comment1 "Open Source"

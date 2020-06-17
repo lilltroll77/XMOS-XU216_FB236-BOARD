@@ -1,12 +1,11 @@
 EESchema Schematic File Version 4
-LIBS:XMOS_XUF216_FB236-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 16
 Title "XTAG / xSYS"
-Date "2019-01-08"
+Date "2020-06-05"
 Rev "BETA"
 Comp "openPnP"
 Comment1 "Open Source"
@@ -292,7 +291,7 @@ Wire Wire Line
 Text Label 4525 2400 0    50   ~ 0
 XTAG.MSEL
 $Comp
-L xmos_project:NC7SZ157 U?
+L XMOS_XUF216_FB236-rescue:NC7SZ157-xmos_project-XMOS_XUF216_FB236-rescue U?
 U 1 1 5C7707A3
 P 5250 3700
 AR Path="/5C7707A3" Ref="U?"  Part="1" 
@@ -374,7 +373,7 @@ TDO from last XMOS chip in chain
 Text Notes 5900 4900 0    50   ~ 0
 A connected header or mini DIN will ground this net
 $Comp
-L xmos_project:NC7WZ17 U?
+L XMOS_XUF216_FB236-rescue:NC7WZ17-xmos_project-XMOS_XUF216_FB236-rescue U?
 U 1 1 5C7707CC
 P 3450 2350
 AR Path="/5C7707CC" Ref="U?"  Part="1" 
